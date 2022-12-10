@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./style/reset.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./style/style.css">
+	<title>Document</title>
+</head>
+
+<body>
+	<div class="centr__page">
+		<div class="wraper">
+			<header class="header">
+				<h1 class="header-title">My Tasks</h1>
+				<div>
+					<div class="first-oval"></div>
+					<div class="second-oval"></div>
+					<div class="third-oval"></div>
+					<div class="fourth-oval"></div>
+
+				</div>
+			</header>
+			<main class="main">
+				<form class="add__task">
+					<input type="text" placeholder="Title" class="add__task-input error" id="titleInput">
+
+					<textarea class="add__task-area " id="description" placeholder="Description"></textarea>
+					<button type="button" class="add__task-btn" id="add-task">Add</button>
+
+
+				</form>
+				<ul id="render__task" class="render__task">
+
+				</ul>
+
+				<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+					aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header" id="exampleModalLabel">
+								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+							</div>
+							<div class="modal-body">
+								...
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+			<footer class="footer">
+				<section class="footer__elem">
+					<button type="button" class="footer__elem-btn"><i class="alert bi bi-exclamation-circle"></i></button>
+					<button type="button" class="footer__elem-btn" id="btn-share" data-bs-toggle="modal"
+						data-bs-target="#exampleModal"><i class="share bi bi-share"></i></button>
+					<button type="button" class="footer__elem-btn"><i class="format bi bi-info-square"></i></button>
+					<button type="button" class="footer__elem-btn"><i class="sort bi bi-sort-down"></i></button>
+					<button type="button" class="footer__elem-btn"><i class="trash bi bi-trash3"></i></button>
+				</section>
+			</footer>
+		</div>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="./index.js"></script>
+	<!-- <script src="./script.js"></script> -->
+</body>
+
+</html>
